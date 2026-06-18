@@ -30,12 +30,13 @@ function isPalindrome(word)
     let reversedWord = lowerWord.split("").reverse().join("");
     return lowerWord === reversedWord;
 }
-function calculateDiscountedPrice(originalPrice, discountPercentage)
-{
-    let discountAmount = originalPrice * ( discountPercentage / 100);
+
+function calculateDiscountedPrice(originalPrice = 100, discountPercentage = 20) {
+    let discountAmount = originalPrice * (discountPercentage / 100);
     let finalPrice = originalPrice - discountAmount;
     return finalPrice;
 }
+
 
 // This is required for the test to function properly
 module.exports = { calculateTax, convertToUpperCase, findMaximum, isPalindrome }
