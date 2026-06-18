@@ -1,41 +1,35 @@
-function calculateTax(amount)
-{
+function calculateTax(amount) {
     let taxValue = amount * 0.10;
     return taxValue;
 }
 
-function convertToUpperCase(text)
-{
+function convertToUpperCase(text) {
     let result = text.toUpperCase();
     return result;
 }
 
+function calculateDiscountedPrice(originalPrice, discountPercentage) {
+    let discountAmount = originalPrice * (discountPercentage / 100);
+    let finalPrice = originalPrice - discountAmount;
+    return finalPrice;
+}
 
-
-function findMaximum(num1, num2)
-{
-    if (num1 > num2)
-    {
+function findMaximum(num1, num2) {
+    if (num1 > num2) {
         return num1;
-    }
-    else
-    {
+    } else {
         return num2;
     }
 }
 
-function isPalindrome(word)
-{
+function isPalindrome(word) {
     let lowerWord = word.toLowerCase();
     let reversedWord = lowerWord.split("").reverse().join("");
     return lowerWord === reversedWord;
 }
 
-function calculateDiscountedPrice(originalPrice = 100, discountPercentage = 20) {
-    let discountAmount = originalPrice * (discountPercentage / 100);
-    let finalPrice = originalPrice - discountAmount;
-    return finalPrice;
-}
+
+
 
 
 // This is required for the test to function properly
