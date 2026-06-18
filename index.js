@@ -10,12 +10,7 @@ function convertToUpperCase(text)
     return result;
 }
 
-function calculateDiscountedPrice(originalPrice, discountPercentage)
-{
-    let discountAmount = originalPrice * ( discountPercentage / 100);
-    let finalPrice = originalPrice - discountAmount;
-    return finalPrice;
-}
+
 
 function findMaximum(num1, num2)
 {
@@ -39,6 +34,7 @@ function calculateDiscountedPrice(originalPrice, discountPercentage)
 {
     let discountAmount = originalPrice * ( discountPercentage / 100);
     let finalPrice = originalPrice - discountAmount;
-    return finalPrice;}
+    return finalPrice;
+}
 // This is required for the test to function properly
 module.exports = { calculateTax, convertToUpperCase, findMaximum, isPalindrome }
