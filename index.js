@@ -36,5 +36,6 @@ function calculateDiscountedPrice(originalPrice, discountPercentage)
     let finalPrice = originalPrice - discountAmount;
     return finalPrice;
 }
+
 // This is required for the test to function properly
 module.exports = { calculateTax, convertToUpperCase, findMaximum, isPalindrome }
