@@ -1,7 +1,7 @@
-function calculateTax(subtotal, taxRate) {
-    let taxAmount = subtotal * (taxRate / 100);
-    return taxAmount;
+function calculateTax(amount) {
+    return amount * 0.1;
 }
+
 
 function convertToUpperCase(text) {
     let result = text.toUpperCase();
